@@ -1,24 +1,47 @@
-var student () = [
-			{
-			"name": "David Castellanos",
-			"favoriteFood": "Chiken_Tikka",
-			"graduated": false,
-			"favorite_activities": ["Animation","Playing Guitar", "Singing"],
-			"parents": 	[[{"name": "Manuel Castellanos",
-					  "favoriteFood": "Tacos",
-				 	 "age": 64,
-				 	 "favorite_activities": ["Playing Guitar", "Excercising"]
-					}],
-					[{"name": "Francis Castellanos",
-					  "favoriteFood": "Tacos",
-					  "age": 56,
-					  "favorite_activities": ["Reading", "Excercising"]
-					}]]
 
-			 }; 			/* an object with information*/
+
+
+const jsonarray = '["Francis Castellanos", "56", "Excercising"]';
+
+const mother = JSON.parse(jsonarray);
+
+console.log(mother)
+
+
+
+
+
+const jsonobj2 = JSON.parse('{"name": "David Castellanos","age": "28", "hobby":"Animation"}');
+
+console.log(jsonobj2);
+
+
+const jsonstr = '{"name": "David Castellanos", "age": "28", "hobby":"Animation"}';
+
+
+
+const jsonobj1 = JSON.parse (jsonstr)
+
+console.log(jsonobj1.name);
+
+console.log(jsonobj1.age);
+
+console.log(jsonobj1.hobby);
+
+
+var student = {
 		
-var jstring = JSON.stringify (student);	/* the object "student" is now a json string and attached to the object "jstring" */
-					
+		 name: "David Castellanos",
+		 favoriteFood: "Chiken_Tikka",
+		 graduated: "false",
+		 hobby: "Animation"
+		
+		 }; 	
 
 
-var jstring = JSON.parse (student); /* the object "student" was converted from a json string and reassigned to the object "jstring" */
+JSON.stringify (student);
+
+const jsobj3 = (student);
+
+console.log(jsobj3);
+
